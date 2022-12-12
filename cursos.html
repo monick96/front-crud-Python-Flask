@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all-pages.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <title>Cursos CtC</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="sticky_header">
+            <!--StickyHeader__All-sc-1hrncf1-0 jDouHn -->
+            <div class="container_sticky_header style0" style="text-align: center;">
+                <!--containers__Container-sc-1oa1ez4-0 lekRZK" style="text-align: center;" -->
+                <div style="font-weight: 500; font-size: 13px;">+5,000 personas estudiaron en <span class="name"></span>
+                    y despegaron su carrera en tecnología. Aplica ahora 🚀
+                </div>
+            </div>
+        </div>
+    
+        <!-- Navigation Bar -->
+        <nav class="navbar-custom ">  
+            <div >
+                <img src="./images/logo1.png" alt="logo" class="logo-nav enlace">
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <div> 
+                <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a class="active" href="./cursos.html">Cursos</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./crud.html" target="_blank">Crud</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="carreras">
+            <h1 class="text-titulo">Nuestras Ofertas Educativas</h1>
+            <h5 class="text-subtitulo"> La carrera Full Stack Web Developer te abre un mundo 
+            de posibilidades.</h5>
+            <h5 class="text-subtitulo">Te formamos en las tecnologías de hoy y del futuro para que puedas desarrollar
+            una carrera tech exitosa.</h5>
+       </div>
+        <div id="app" class="container">
+            <div class="tarjeta" v-for="oferta in ofertas">
+                <!-- o <img v-bind:src="dato.image" v-bind:alt="dato.image"> -->
+                <img class="image-oferta" :src="oferta.image" :alt="oferta.image">
+                <div class="cuerpo">
+                    <h4>{{oferta.carrera}}</h4>
+                    <p><b>Duracion: </b>{{oferta.duracion}}</p>
+                    <p class="justify"><b>Tecnologias:</b></p>
+                    <p>{{oferta.tecnologias}}</p>
+                    <p class="center"><a href="contacto.html"><button class="btn-estudiar">Incribirme</button></a></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="header-footer">
+                <div class="menu-footer">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./images/logo1.png" alt="logo" class="img-logo">
+                        </a>
+                    </div>
+                    <div class="nav-footer">
+                        <a href="./cursos.html">Cursos</a>
+                        <a href="./nosotros.html">Nosotros</a>
+                        <a href="./blog.html">Blog</a>
+                        <a href="./contacto.html">Contáctanos</a>
+                        <a href="https://edutin.com/pages/politicas">Política de privacidad</a>
+                        <a href="https://edutin.com/pages/terminos">Términos y condiciones</a>
+                    </div>
+                    <div class="social-footer">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="iframe_div">
+                        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.755651960732!2d-58.41693905956792!3d-34.585048821326616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57fa1f4df77%3A0xb78e122581f68462!2sScalabrini%20Ortiz!5e0!3m2!1ses-419!2sar!4v1662006488201!5m2!1ses-419!2sar" width="300" height="200" style="border:0"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="text-copyright">
+                        <p>&#169Code to Code 2022</p>
+                    </div>
+                    
+                </div>
+    
+            </div>
+        
+        </div>
+    
+        </footer>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./js/main.js"></script>
+    
+</body>
+</html>

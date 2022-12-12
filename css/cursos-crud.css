@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif, 'arial';
+}
+
+body{
+    color: white !important;
+}
+
+
+
+body{
+    background:#333;
+}
+
+.btn-estudiar {
+    background-color: #3799e9;
+    font-size: 1.2rem;
+    margin: 9px auto;
+    border: none;
+    color: white;
+    padding: 4px 6px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block;
+    cursor: pointer; */
+}
+
+
+table {
+    /* color: white !important; */
+    /* background-color: #333; */
+    font-size: 1.25rem;
+    width: 50%;
+    margin: 20px auto;
+}
+td{
+    Border:1px solid #1f61e4; 
+    text-align: center;
+}
+td.center {
+    text-align: center;
+}
+
+td .centrar{
+  padding: 0 !important;
+  margin: 0 !important;
+}
