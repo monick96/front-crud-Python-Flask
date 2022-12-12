@@ -114,11 +114,12 @@ body{
 }
 
 .style6{
-    width: 100%;
+    width: 82%;
     display: flex;
     justify-content: flex-start;
-    padding-top: 72px;
+    padding-top: 56px;
     padding-bottom: 52px;
+    padding-left: 94px;
 
 }
 
